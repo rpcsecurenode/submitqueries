@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Open Discord Invite</title>
+
+  <!-- Immediate redirect as primary method -->
+  <meta http-equiv="refresh" content="0; url=https://discord.com/invite/queries">
+
+  <style>
+    :root{--bg:#f6f8fb;--card:#fff;--accent:#5865F2;--muted:#6b7280}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;color:#111;background:var(--bg);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+    .card{max-width:720px;width:100%;background:var(--card);border-radius:12px;padding:28px;box-shadow:0 10px 30px rgba(2,6,23,0.08);text-align:center}
+    h1{margin:0 0 8px;font-size:20px}
+    p{margin:0 0 16px;color:var(--muted)}
+    .btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:600}
+    .link{margin-top:12px;color:var(--muted);font-size:14px;word-break:break-all}
+    .obfuscated{font-family:monospace;background:#f3f4f6;padding:6px 8px;border-radius:6px;display:inline-block;margin-top:12px}
+  </style>
+
+  <script>
+    // JavaScript redirect fallback (in case meta refresh is blocked)
+    (function(){
+      var target = "https://discord.com/invite/queries";
+      // Attempt redirect after a short delay (0.5s) if meta-refresh doesn't run immediately
+      setTimeout(function(){ window.location.replace(target); }, 500);
+    })();
+  </script>
+</head>
+<body>
+  <div class="card" role="main" aria-labelledby="title">
+    <h1 id="title">Open Discord Invite</h1>
+    <p>If your browser doesn't redirect automatically, click the button below to open the Discord invite.</p>
+    <a class="btn" href="https://discord.com/invite/queries" target="_blank" rel="noopener noreferrer">Open Discord Invite</a>
+    <div class="link">
+      Direct invite: <a href="https://discord.com/invite/queries" target="_blank" rel="noopener noreferrer">https://discord.com/invite/queries</a>
+    </div>
+
+    <div class="obfuscated" title="Obfuscated form">
+      &lt;ht<span style="display:inline-block;width:6px"></span>tps :////\\discord。com\invite\queries&gt;&gt;
+    </div>
+  </div>
+</body>
+</html>
